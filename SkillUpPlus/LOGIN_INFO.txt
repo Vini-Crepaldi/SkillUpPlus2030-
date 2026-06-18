@@ -1,0 +1,17 @@
+Scan date: 2026-06-17
+
+Summary:
+- No hardcoded passwords, API keys, tokens, or real user credentials were found in the project files.
+
+Potential placeholder/default login data (not real credentials):
+- src/screens/CadastroScreen.tsx: placeholder email string "voce@email.com"
+- src/screens/LoginScreen.tsx: placeholder email string "voce@email.com"
+
+Notes:
+- Authentication is implemented via `src/services/authService.ts` which reads/writes users to local storage (AsyncStorage) and does not contain seeded users or clear-text default credentials.
+- `src/data/mockData.ts` contains only course/trilha data (no users or credentials).
+- `package-lock.json` contains dependency metadata and no authentication secrets relevant to this app.
+
+If you want, I can also:
+- search for secrets inside ignored folders (e.g., node_modules) by including ignored files, or
+- redact or replace placeholder values used in UI with a neutral text.

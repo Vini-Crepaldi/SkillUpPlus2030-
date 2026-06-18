@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "SkillUpPlus 2030+",
+    "slug": "skillupplus2030",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "skillupplus",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#4F46E5"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
+    "android": {
+      "package": "br.edu.fatec.skillupplus"
+    },
+    "web": { "bundler": "metro" }
+  }
+}

@@ -1,0 +1,108 @@
+import { Curso } from '../models/Curso';
+import { Trilha } from '../models/Trilha';
+const img = (id: string) => `https://picsum.photos/seed/${id}/600/400`;
+export const CURSOS: Curso[] = [
+  new Curso(
+    'c1',
+    'Fundamentos de IA Generativa',
+    'IA',
+    8,
+    'Entenda como modelos de IA funcionam e como usa-los no dia a dia profissional.',
+    'Iniciante',
+    img('ia1'),
+  ),
+  new Curso(
+    'c2',
+    'Engenharia de Prompts',
+    'IA',
+    6,
+    'Aprenda a conversar com IA para obter resultados confiaveis no trabalho.',
+    'Intermediário',
+    img('ia2'),
+  ),
+  new Curso(
+    'c3',
+    'Liderança em Tempos de Mudança',
+    'Gestão',
+    10,
+    'Gestao de equipes em cenarios de automacao e transformacao digital.',
+    'Intermediário',
+    img('gestao1'),
+  ),
+  new Curso(
+    'c4',
+    'Gestão Ágil de Projetos',
+    'Gestão',
+    12,
+    'Scrum e Kanban aplicados a projetos de tecnologia e inovacao.',
+    'Iniciante',
+    img('gestao2'),
+  ),
+  new Curso(
+    'c5',
+    'ESG na Prática',
+    'Sustentabilidade',
+    7,
+    'Como sustentabilidade e governanca viram diferencial de carreira.',
+    'Iniciante',
+    img('sust1'),
+  ),
+  new Curso(
+    'c6',
+    'Economia Verde e Empregos do Futuro',
+    'Sustentabilidade',
+    9,
+    'Os setores que mais vao contratar na transicao sustentavel.',
+    'Avançado',
+    img('sust2'),
+  ),
+  new Curso(
+    'c7',
+    'Comunicação e Inteligência Emocional',
+    'Soft Skills',
+    5,
+    'Habilidades humanas que a automacao nao substitui.',
+    'Iniciante',
+    img('soft1'),
+  ),
+  new Curso(
+    'c8',
+    'Pensamento Crítico e Resolução de Problemas',
+    'Soft Skills',
+    6,
+    'Tome decisoes melhores em ambientes complexos e incertos.',
+    'Intermediário',
+    img('soft2'),
+  ),
+];
+export const TRILHAS: Trilha[] = [
+  new Trilha(
+    't1',
+    'Profissional Aumentado por IA',
+    'IA',
+    'Domine IA para multiplicar sua produtividade.',
+    [CURSOS[0], CURSOS[1]],
+  ),
+  new Trilha(
+    't2',
+    'Líder do Futuro',
+    'Gestão',
+    'Gestao moderna para liderar a mudanca.',
+    [CURSOS[2], CURSOS[3]],
+  ),
+  new Trilha(
+    't3',
+    'Carreira Sustentável',
+    'Sustentabilidade',
+    'Posicione-se na economia verde.',
+    [CURSOS[4], CURSOS[5]],
+  ),
+  new Trilha(
+    't4',
+    'Habilidades Humanas 4.0',
+    'Soft Skills',
+    'O que te diferencia das maquinas.',
+    [CURSOS[6], CURSOS[7]],
+  ),
+];
+export const RECOMENDADOS: Curso[] = [CURSOS[0], CURSOS[2], CURSOS[4], CURSOS[6]];
